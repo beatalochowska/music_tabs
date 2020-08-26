@@ -1,15 +1,15 @@
 import React from "react";
 import { MainPage } from "pages";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Switch>
         <Route exact path="/music_tabs" component={MainPage} />
         <Route path="*" component={MainPage} />
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 
